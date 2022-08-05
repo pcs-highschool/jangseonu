@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="main">
+    <h1>My page</h1>
+    <p>선우 Amuz Page의 오신것을 환영합니당~</p>    
+    <hr />
+      <ListItem :Title="'UserName'" :userName="'장선우'" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ListItem from './components/list-item.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  components : {
+    ListItem
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
